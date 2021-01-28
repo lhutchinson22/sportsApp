@@ -50,33 +50,34 @@
 
     <!-- Banner -->
     <header id="sportsBanner">
-      <h1 class="sportsTitle">SPORTS DASHBOARD.</h1>
+      <h1 class="sportsTitle">ADD A TEAM.</h1>
     </header>
 
-    <!-- Form -->
-    <div class="homepageContainer" id="searchDiv">
-      <form class="form-inline">
-        <div class="form-group mx-sm-3 mb-2">
+    <div class="addTeamContainer">
+      <form id="addteamForm">
+        <div class="form-group">
+          <label for="formGroupExampleInput">Team Name</label>
           <input
             type="text"
             class="form-control"
-            id="teamSearch"
-            placeholder="SEARCH A TEAM"
-            style="width: 600px; height: 60px"
+            id="teamNameInput"
+            placeholder="input team name here"
           />
         </div>
-        <button type="submit" class="btn btn-primary mb-2" id="searchTeamBtn">
-          SEARCH
-        </button>
-        <button type="submit" class="btn btn-primary mb-2" id="viewTeamsBtn">
-          VIEW ALL TEAMS
+        <div class="form-group">
+          <label for="formGroupExampleInput2"># of Touchdowns</label>
+          <input
+            type="text"
+            class="form-control"
+            id="touchdownInput"
+            placeholder="input # of touchdowns made here"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary mb-2" id="addTeambtn">
+          ADD TEAM
         </button>
       </form>
-    </div>
-
-    <div class="homepageContainer" id="returnTeamsDiv">
-      <h1 id="all-teams-header" class="hidden">YOUR TEAM STATS.</h1>
-      <p id="displayAllteams"></p>
+      <p class="hidden" id="newTeamAdded">YOUR TEAM WAS ADDED.</p>
     </div>
 
     <!-- Footer Section  -->
@@ -115,7 +116,6 @@
       type="text/javascript"
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     ></script>
-    <script src="./js/home.js"></script>
     <script src="./js/addTeam.js"></script>
     <script src="./js/deleteNote.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
